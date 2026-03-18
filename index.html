@@ -5,9 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Pizzaria Gomes</title>
+    <title>Pizzaria Mania</title>
 </head>
 <body>
-    <h1>Pizzaria Gomes</h1>
+    <header>
+        <h1>Pizzaria Mania</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-conteudo">
+                <h2>A pizza que você ama, do jeito que merece</h2>
+                <p>Massa fresca, ingredientes selecionados e muito sabor em cada fatia.</p>
+                <a href="#cardapio" class="btn-hero">Ver Cardápio</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>A Pizzaria Mania é o lugar perfeito para quem é apaixonado por pizza de verdade! Com massas fresquinhas, preparadas diariamente, e ingredientes selecionados, cada sabor é uma explosão de qualidade e muito recheio. Do clássico ao mais criativo, aqui sempre tem uma opção que combina com o seu momento.</p>
+            <p>Ambiente acolhedor, atendimento rápido e aquele cheirinho irresistível de pizza saindo do forno fazem da Pizzaria Mania o ponto ideal para reunir amigos, família ou simplesmente matar aquela vontade de pizza a qualquer hora.</p>
+            <p>Pizzaria Mania: porque amar pizza nunca é demais!</p>
+        </section>
+
+        <section id="cardapio">
+            <h2>Cardapio</h2>
+            <div class="cardapio-grid">
+                <article class="pizza-card">
+                    <h3>Atum</h3>
+                    <p>Molho de tomate, mussarela, atum, cebola e azeitonas.</p>
+                    <span class="preco">R$ 43,00</span>
+                </article>
+
+                <article class="pizza-card">
+                    <h3>Calabresa</h3>
+                    <p>Molho de tomate, mussarela, calabresa fatiada e cebola.</p>
+                    <span class="preco">R$ 38,00</span>
+                </article>
+ 
+                <article class="pizza-card">
+                    <h3>Frango com Catupiry</h3>
+                    <p>Molho de tomate, mussarela, frango desfiado temperado e catupiry.</p>
+                    <span class="preco">R$ 44,00</span>
+                </article>
+
+                <article class="pizza-card">
+                    <h3>Marguerita</h3>
+                    <p>Molho de tomate, mussarela fresca, tomate fatiado e manjericão.</p>
+                    <span class="preco">R$ 38,00</span>
+                </article>
+ 
+                <article class="pizza-card">
+                    <h3>Pepperoni</h3>
+                    <p>Molho de tomate, mussarela e rodelas generosas de pepperoni.</p>
+                    <span class="preco">R$ 46,00</span>
+                </article>
+     
+                <article class="pizza-card">
+                    <h3>Portuguesa</h3>
+                    <p>Molho de tomate, mussarela, presunto, ovos, cebola e azeitonas.</p>
+                    <span class="preco">R$ 42,00</span>
+                </article>
+ 
+                <article class="pizza-card">
+                    <h3>Quatro Queijos</h3>
+                    <p>Mussarela, provolone, gorgonzola e parmesão sobre molho branco.</p>
+                    <span class="preco">R$ 45,00</span>
+                </article>
+ 
+                <article class="pizza-card">
+                    <h3>Vegetariana</h3>
+                    <p>Molho de tomate, mussarela, pimentão, abobrinha, milho e tomate cereja.</p>
+                    <span class="preco">R$ 40,00</span>
+                </article>
+ 
+                <article class="pizza-card">
+                    <h3>Chocolate com Morango</h3>
+                    <p>Chocolate ao leite derretido, morangos frescos fatiados e açúcar de confeiteiro.</p>
+                    <span class="preco">R$ 39,00</span>
+                </article>
+ 
+            </div>
+        </section>
+
+        <section id="localizacao">
+            <h2>Localização</h2>
+            <p>Rua das Pizzas, 1008 — Vila Sabor, São Paulo - SP</p>
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d456.9146549705416!2d-46.59055179466186!3d-23.62880732048724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1773844900661!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização da Pizzaria Mania">
+                </iframe>
+            </div>
+        </section>
+
+         <section id="contato">
+            <h2>Contato</h2>
+            <ul class="contato-lista">
+                <li>
+                    <span class="contato-label">WhatsApp</span>
+                    <a href="https://wa.me/5511946997458" target="_blank" rel="noopener noreferrer">(11) 94699-7458</a>
+                </li>
+                <li>
+                    <span class="contato-label">Endereço</span>
+                    <span>Rua das Pizzas, 1008 — Vila Sabor, São Paulo - SP</span>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pizzaria Mania. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
