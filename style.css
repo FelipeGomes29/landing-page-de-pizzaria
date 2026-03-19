@@ -131,6 +131,7 @@ nav {
     text-align: center;
     background-color: var(--cinza-claro);
     padding: 80px 10%;
+    margin: auto;
 }
 
 #sobre h2 {
@@ -141,6 +142,193 @@ nav {
 
 #sobre p {
     font-size: 18px;
-    margin: 100%;
+    margin: auto;
+}
 
+#cardapio {
+    padding: 80px 5%;
+    background-color: var(--amarelo);
+}
+ 
+#cardapio h2 {
+    font-size: 36px;
+    color: var(--vermelho);
+    text-align: center;
+    margin-bottom: 48px;
+    font-style: italic;
+}
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 28px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+ 
+.pizza-card {
+    background-color: var(--texto-claro);
+    border-radius: var(--raio);
+    padding: 28px 24px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform var(--transicao), box-shadow var(--transicao);
+}
+
+.pizza-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.pizza-card h3 {
+    font-size: 20px;
+    color: var(--vermelho);
+}
+
+.pizza-card p {
+    font-size: 16px;
+    color: var(--texto-escuro);
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#localizacao {
+    background-color: var(--cinza-claro);
+    padding: 60px 10%;
+    text-align: center;
+}
+ 
+#localizacao h2 {
+    font-size: 36px;
+    color: var(--vermelho);
+    margin-bottom: 16px;
+    font-style: italic;
+}
+ 
+#localizacao > p {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 36px;
+}
+
+#contato {
+    background-color: var(--amarelo);
+    padding: 80px 10%;
+    text-align: center;
+}
+ 
+#contato h2 {
+    font-size: 36px;
+    color: var(--vermelho);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+ 
+.contato-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+ 
+.contato-lista li {
+    background-color: var(--texto-claro);
+    border-radius: var(--raio);
+    padding: 20px 40px;
+    box-shadow: var(--sombra);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    min-width: 320px;
+}
+ 
+.contato-label {
+    font-weight: bold;
+    color: var(--vermelho);
+    font-size: 16px;
+    min-width: 80px;
+    text-align: left;
+}
+ 
+.contato-lista a,
+.contato-lista span:last-child {
+    color: var(--texto-escuro);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color var(--transicao);
+}
+ 
+.contato-lista a:hover {
+    color: var(--vermelho);
+}
+
+footer {
+    background-color: var(--vermelho);
+    color: var(--texto-claro);
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+    .cardapio-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas no tablet */
+    }
+ 
+    .hero-conteudo h2 {
+        font-size: 36px;
+    }
+ 
+    header {
+        padding: 16px 24px;
+    }
+ 
+    #hero {
+        padding: 0 40px;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .cardapio-grid {
+        grid-template-columns: 1fr; /* 1 coluna no celular */
+    }
+ 
+    nav ul {
+        gap: 16px;
+    }
+ 
+    nav ul li a {
+        font-size: 14px;
+    }
+ 
+    header h1 {
+        font-size: 20px;
+    }
+ 
+    .hero-conteudo h2 {
+        font-size: 28px;
+    }
+ 
+    .hero-conteudo p {
+        font-size: 16px;
+    }
+ 
+    #hero {
+        padding: 0 24px;
+        justify-content: center;
+        text-align: center;
+    }
+ 
+    .contato-lista li {
+        flex-direction: column; /* empilha label e valor no celular */
+        min-width: unset;
+        width: 100%;
+    }
 }

@@ -1,0 +1,88 @@
+# 🍕 Pizzaria Mania
+
+Landing page desenvolvid para uma pizzaria, com foco em apresentar o cardápio, localização e informações de contato de forma simples e responsiva.
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+pizzaria-mania/
+├── index.html       # Estrutura da página
+├── style.css        # Estilos e responsividade
+├── script.js        # Scripts (JavaScript)
+└── img/
+    └── pizza-header.jpg   # Imagem de fundo do hero
+```
+
+---
+
+## 📄 Seções da Página
+
+- **Header** — Logo com o nome da pizzaria e menu de navegação fixo no topo
+- **Hero** — Banner de destaque com imagem de fundo em parallax e botão de chamada para ação
+- **Sobre nós** — Descrição da pizzaria e seus diferenciais
+- **Cardápio** — Grid de cards com nome, descrição e preço de cada pizza
+- **Localização** — Endereço e mapa embarcado do Google Maps
+- **Contato** — Link direto para WhatsApp e endereço
+- **Footer** — Rodapé com copyright
+
+---
+
+## 🎨 Tecnologias Utilizadas
+
+- **HTML5** — Estrutura semântica com tags como `<section>`, `<article>`, `<nav>`, `<header>`, `<footer>`
+- **CSS3** — Estilização com variáveis CSS, Flexbox, CSS Grid e media queries
+- **Google Maps Embed** — Mapa interativo via iframe
+
+---
+
+## 💡 Funcionalidades
+
+- Navegação com scroll suave até cada seção
+- Header fixo no topo durante a rolagem (`position: sticky`)
+- Efeito parallax na imagem de fundo do hero (`background-attachment: fixed`)
+- Cards do cardápio com animação de hover
+- Link direto para conversa no WhatsApp via `wa.me`
+- Layout totalmente responsivo para desktop, tablet e celular
+
+---
+
+## 📱 Responsividade
+
+| Tela | Colunas do Cardápio |
+|---|---|
+| Desktop (> 900px) | 3 colunas |
+| Tablet (até 900px) | 2 colunas |
+| Celular (até 600px) | 1 coluna |
+
+---
+
+## 🚀 Como Usar
+
+1. Clone ou baixe o projeto
+2. Substitua `img/pizza-header.jpg` pela imagem de sua preferência
+3. No `index.html`, atualize o `src` do `<iframe>` com o embed real do seu endereço no Google Maps
+4. Atualize o número do WhatsApp no link `https://wa.me/55XXXXXXXXXXX`
+5. Abra o `index.html` no navegador — nenhuma instalação necessária
+
+---
+
+## ✏️ Personalização
+
+As cores principais ficam nas variáveis CSS no topo do `style.css`, facilitando a troca:
+
+```css
+:root {
+    --amarelo: #e9da88;
+    --vermelho: #c0392b;
+    --texto-escuro: #2c2c2c;
+}
+```
+
+---
+
+## 📌 Observações
+
+- O efeito parallax (`background-attachment: fixed`) pode não funcionar em navegadores mobile (Safari e Chrome para iOS). Isso é uma limitação conhecida desses navegadores.
+- O mapa do Google Maps requer conexão com a internet para carregar.
